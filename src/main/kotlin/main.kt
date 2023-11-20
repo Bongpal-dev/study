@@ -1,13 +1,14 @@
-class Solution {
-    fun solution(a: Int, b: Int, n: Int): Int {
-        return (if (n > b) n - b else 0) / (a - b) * b
+class Example {
+    fun print(t: String? = "Kotlin" ) {
+        var he = t ?: "Kotlin"
+        println("Hello, ${he}!")
     }
 }
 
 fun main() {
-
-    var answer = Solution()
-
-    println(answer.solution(3,1,20) )
-
+    val example = Example()
+    val msg = example::print // 람다 표현식 사용
+    msg(null) // 메서드 호출
+    msg("world")
+    msg("me")
 }
